@@ -1,13 +1,473 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mvariance EdTech Pvt Ltd</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mvariance Edtech - Advanced Electronics Manufacturing & Assembly Workshop</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        /* Container */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+
+        /* Header */
+        header {
+            background: #004080;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        header .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header img {
+            height: 60px;
+        }
+
+        /* Navigation */
+        nav {
+            margin-top: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            height: 300px;
+            position: relative;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Main Content */
+        section {
+            padding: 40px 0;
+            background: #fff;
+            margin-bottom: 20px;
+        }
+
+        section:nth-child(even) {
+            background: #f9f9f9;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #004080;
+        }
+
+        .course-overview, .hands-on, .objectives, .syllabus, .venue, .who, .why, .registration, .contact {
+            margin-bottom: 30px;
+        }
+
+        .syllabus ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        .syllabus ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Register Button */
+        .register-btn {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 15px;
+            background: #004080;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .register-btn:hover {
+            background: #003366;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header .container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .hero {
+                height: 200px;
+            }
+        }
+    </style>
 </head>
 <body>
-  <h1>Welcome to Mvariance EdTech Pvt Ltd</h1>
-  <p>We provide technology training in private engineering colleges.</p>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <!-- Logo -->
+            <img src="logo.png" alt="Mvariance Edtech Logo">
+            <!-- Navigation -->
+            <nav>
+                <ul>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#syllabus">Syllabus</a></li>
+                    <li><a href="#venue">Venue</a></li>
+                    <li><a href="#who">Who Should Attend</a></li>
+                    <li><a href="#why">Why Attend</a></li>
+                    <li><a href="#registration">Register</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Advanced Electronics Manufacturing & Assembly Workshop</h1>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        
+        <!-- Course Overview -->
+        <section id="overview">
+            <h2>Course Overview</h2>
+            <div class="course-overview">
+                <p>This <strong>hands-on course</strong> delves into <strong>Advanced Electronics Manufacturing & Assembly</strong>, offering comprehensive training on the entire inline assembly process. Participants will gain practical experience in operating essential equipment, including:</p>
+                <ul>
+                    <li>Solder Paste Printer</li>
+                    <li>Solder Paste Inspection System (SPI)</li>
+                    <li>Pick & Place Machine</li>
+                    <li>Reflow Oven</li>
+                    <li>Automatic Optical Inspection (AOI) System</li>
+                </ul>
+            </div>
+            <div class="hands-on">
+                <h3>Hands-On Training</h3>
+                <ul>
+                    <li><strong>Tailor-Made PCB Assembly</strong>: Assemble SMT components on a custom-designed PCB, ensuring real-world application of skills.</li>
+                    <li><strong>Component Handling</strong>: Learn ESD-safe methods for handling components in the assembly line.</li>
+                    <li><strong>Soldering Techniques</strong>: Master various soldering methods essential for high-quality PCBA.</li>
+                    <li><strong>Solder Paste Fundamentals</strong>: Understand the fundamentals of solder paste and its role in assembly.</li>
+                    <li><strong>Stencil Fundamentals</strong>: Gain knowledge of stencil design, usage, and maintenance for precise solder paste deposition.</li>
+                </ul>
+            </div>
+            <div class="objectives">
+                <h3>Course Objectives</h3>
+                <ul>
+                    <li><strong>Comprehensive Understanding</strong> of the automatic assembly process using both SMT and through-hole components.</li>
+                    <li><strong>Operational Proficiency</strong> in handling and maintaining key assembly machinery.</li>
+                    <li><strong>Practical Skills</strong> in assembling PCBs, ensuring participants can apply their knowledge effectively.</li>
+                    <li><strong>Safety Awareness</strong> in component handling and assembly processes to prevent damage and ensure a safe working environment.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Training Syllabus -->
+        <section id="syllabus">
+            <h2>Training Syllabus</h2>
+            <div class="syllabus">
+                <h3>1. Introduction to PCBA Assembly</h3>
+                <ul>
+                    <li><strong>1.1. Major Electronics Trends – Potential New Ecosystems</strong></li>
+                    <li><strong>1.2. Types of Assembly Technology</strong>
+                        <ul>
+                            <li>1.2.1. Through Hole Assembly Technology</li>
+                            <li>1.2.2. Double Side SMT Assembly Technology</li>
+                            <li>1.2.3. Mixed Technology</li>
+                        </ul>
+                    </li>
+                    <li><strong>1.3. Equipment Used in the Assembly Processes</strong></li>
+                    <li><strong>1.4. SMT Production Process Steps</strong>
+                        <ul>
+                            <li>1.4.1. Solder Paste Printing Process</li>
+                            <li>1.4.2. Components Pick & Place</li>
+                            <li>1.4.3. Reflow Soldering</li>
+                            <li>1.4.4. Cleaning Process of PCB Assembly</li>
+                        </ul>
+                    </li>
+                    <li><strong>1.5. Inspection Systems</strong>
+                        <ul>
+                            <li>1.5.1. Solder Paste Inspection Systems (SPI)</li>
+                            <li>1.5.2. Automatic Optical Inspection Systems (AOI)</li>
+                        </ul>
+                    </li>
+                    <li><strong>1.6. Soldering Methods</strong></li>
+                    <li><strong>1.7. Soldering Process</strong>
+                        <ul>
+                            <li>1.7.1. Inter-metallics</li>
+                            <li>1.7.2. Solder Wetting</li>
+                        </ul>
+                    </li>
+                    <li><strong>1.8. Types of PCBs</strong></li>
+                    <li><strong>1.9. Various Surface Mount Devices</strong></li>
+                    <li><strong>1.10. Chip Components</strong></li>
+                    <li><strong>1.11. PCBA Tests</strong>
+                        <ul>
+                            <li>1.11.1. Functional Test</li>
+                            <li>1.11.2. Testing in Harsh Environments</li>
+                        </ul>
+                    </li>
+                    <li><strong>1.12. Industry-Adopted IPC Standards</strong></li>
+                    <li><strong>1.13. Key Safety Methods</strong>
+                        <ul>
+                            <li>1.13.1. Electrostatic Discharge (ESD)</li>
+                            <li>1.13.2. Electrical Overstress (EOS)</li>
+                            <li>1.13.3. ESD/EOS Safe Work Areas</li>
+                        </ul>
+                    </li>
+                    <li><strong>1.14. Handling the PCBA</strong></li>
+                </ul>
+
+                <h3>2. Solder Paste Basics</h3>
+                <ul>
+                    <li><strong>2.1. Fundamentals of Solder Paste</strong></li>
+                    <li><strong>2.2. Understanding Solder Powder</strong></li>
+                    <li><strong>2.3. Solder Paste Performance Standards</strong></li>
+                    <li><strong>2.4. Intermetallic Growth</strong></li>
+                    <li><strong>2.5. Understanding Solder Powder Manufacturing</strong>
+                        <ul>
+                            <li>2.5.1. Spinning Disc Atomization</li>
+                            <li>2.5.2. Atomization Process</li>
+                            <li>2.5.3. Sieving Process</li>
+                            <li>2.5.4. Solder Powder Mesh Sizes</li>
+                        </ul>
+                    </li>
+                    <li><strong>2.6. Solder Particle Powder Size as per ANSI/J-STD-005</strong></li>
+                    <li><strong>2.7. Solder Paste Metal Content</strong></li>
+                    <li><strong>2.8. Role of Flux in Solder Paste</strong>
+                        <ul>
+                            <li>2.8.1. Water-Soluble (WS) Flux</li>
+                            <li>2.8.2. No-Clean Flux</li>
+                        </ul>
+                    </li>
+                    <li><strong>2.9. Handling of Solder Paste</strong></li>
+                    <li><strong>2.10. Reflow – Factors to Consider</strong></li>
+                </ul>
+
+                <h3>3. Stencil Basics</h3>
+                <ul>
+                    <li><strong>3.1. Surface Mount Package Sizes</strong></li>
+                    <li><strong>3.2. Importance of Stencils</strong></li>
+                    <li><strong>3.3. Functions of Stencils</strong></li>
+                    <li><strong>3.4. Assembly Process Defects – Linked to Stencil</strong></li>
+                    <li><strong>3.5. Stencil Terminology</strong></li>
+                    <li><strong>3.6. Paste Printing through Stencil</strong></li>
+                    <li><strong>3.7. Stencil Technology</strong></li>
+                    <li><strong>3.8. Stencil Design Aspects</strong></li>
+                    <li><strong>3.9. Stencil Thickness and Importance of ASPECT & AREA Ratio</strong></li>
+                    <li><strong>3.10. Solder Paste Release Vs Particle Size</strong></li>
+                    <li><strong>3.11. Fine Feature Printing</strong></li>
+                    <li><strong>3.12. Types of Stencils</strong>
+                        <ul>
+                            <li>3.12.1. Electroforming</li>
+                            <li>3.12.2. Laser Cutting</li>
+                            <li>3.12.3. Chemical Etching</li>
+                            <li>3.12.4. Nanocoating SMT Stencils</li>
+                        </ul>
+                    </li>
+                    <li><strong>3.13. Framed & Frameless Stencils</strong></li>
+                    <li><strong>3.14. Stencil Tension</strong></li>
+                    <li><strong>3.15. Fiducials – PCB & Stencil Accurate Alignment</strong></li>
+                    <li><strong>3.16. Gerber: Input Required to Make Stencil</strong></li>
+                    <li><strong>3.17. Stencil Storage</strong></li>
+                    <li><strong>3.18. Stencil Cleaning</strong></li>
+                    <li><strong>3.19. Aperture and Pad Designs</strong></li>
+                    <li><strong>3.20. Water-Break Test – Degree of Wettability</strong></li>
+                </ul>
+
+                <h3>4. Solder Paste Printing</h3>
+                <ul>
+                    <li><strong>4.1. The Solder Paste Printing Process</strong></li>
+                    <li><strong>4.2. Most Common Paste Printing Equipment</strong></li>
+                    <li><strong>4.3. Jet Printing</strong></li>
+                    <li><strong>4.4. Flexible & Thin Boards – Panels</strong></li>
+                    <li><strong>4.5. Paste Print Quality Check</strong></li>
+                    <li><strong>4.6. Influencing Factors for a Good Print</strong></li>
+                    <li><strong>4.7. Optimization of Printing Process</strong></li>
+                    <li><strong>4.8. Transfer Efficiency</strong></li>
+                    <li><strong>4.9. Squeegee Pressure</strong></li>
+                    <li><strong>4.10. Process Parameter - Squeegee Angle</strong></li>
+                    <li><strong>4.11. PCB Support</strong></li>
+                    <li><strong>4.12. Squeegee Blades</strong></li>
+                    <li><strong>4.13. Alignment</strong></li>
+                    <li><strong>4.14. PCB Pallets</strong></li>
+                    <li><strong>4.15. Common Printing Defects</strong></li>
+                </ul>
+
+                <h3>5. PCBA Pick and Place Systems</h3>
+                <ul>
+                    <li><strong>5.1. Introduction to the Pick and Place Machine</strong></li>
+                    <li><strong>5.2. PCB Assembly Process</strong></li>
+                    <li><strong>5.3. Working of Pick and Place Machine</strong></li>
+                    <li><strong>5.4. Parts of Pick and Place Machine</strong></li>
+                    <li><strong>5.5. Pick and Place Machine Operation</strong></li>
+                    <li><strong>5.6. Programming Pick and Placing Machine</strong></li>
+                    <li><strong>5.7. SMT Components and Packages</strong></li>
+                    <li><strong>5.8. Types of PCBs</strong></li>
+                    <li><strong>5.9. Responsibilities of Pick and Place Machine Operator</strong></li>
+                </ul>
+
+                <h3>6. Understanding SMT Reflow</h3>
+                <ul>
+                    <li><strong>6.1. Soldering Theory</strong></li>
+                    <li><strong>6.2. Reflow Soldering</strong></li>
+                    <li><strong>6.3. Factors Influencing Reflow</strong></li>
+                    <li><strong>6.4. Soldering Process</strong></li>
+                    <li><strong>6.5. Reflow Profile</strong></li>
+                    <li><strong>6.6. Heating Technologies</strong></li>
+                    <li><strong>6.7. Reflow Oven</strong></li>
+                    <li><strong>6.8. Influence of Reflow Profile on Solder Joint Quality & Reliability</strong></li>
+                    <li><strong>6.9. Factors Influencing Voiding</strong></li>
+                    <li><strong>6.10. Reflow Profile Zones Influencing Voiding</strong></li>
+                    <li><strong>6.11. Reflow Profile Parameters</strong></li>
+                    <li><strong>6.12. Profile Setting for Reliable & Repeatable Process</strong></li>
+                </ul>
+
+                <h3>7. PCBA Inspection Systems</h3>
+                <ul>
+                    <li><strong>7.1. Manual Inspection</strong></li>
+                    <li><strong>7.2. Solder Paste Inspection Systems</strong></li>
+                    <li><strong>7.3. Automatic Optical Inspection System</strong></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Venue -->
+        <section id="venue">
+            <h2>Venue</h2>
+            <div class="venue">
+                <p><strong>Central Electronics Centre</strong><br>
+                <strong>Indian Institute of Technology Madras</strong><br>
+                Chennai - 600036</p>
+            </div>
+        </section>
+
+        <!-- Who Should Attend -->
+        <section id="who">
+            <h2>Who Should Attend</h2>
+            <div class="who">
+                <ul>
+                    <li>Electronics Engineers</li>
+                    <li>Manufacturing Technicians</li>
+                    <li>Quality Assurance Professionals</li>
+                    <li>SMT Operators</li>
+                    <li>Individuals Interested in Advanced PCB Assembly Processes</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Why Attend -->
+        <section id="why">
+            <h2>Why Attend?</h2>
+            <div class="why">
+                <ul>
+                    <li><strong>Expert Instructors</strong>: Learn from seasoned professionals with extensive industry experience.</li>
+                    <li><strong>Practical Experience</strong>: Gain hands-on experience with state-of-the-art assembly equipment and real PCB assembly.</li>
+                    <li><strong>Comprehensive Curriculum</strong>: Covering everything from solder paste basics to advanced inspection systems.</li>
+                    <li><strong>Networking Opportunities</strong>: Connect with peers and industry experts to expand your professional network.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Registration Details -->
+        <section id="registration">
+            <h2>Registration Details</h2>
+            <div class="registration">
+                <p><strong>Duration:</strong> 3 Days</p>
+                <p><strong>Dates:</strong> [Insert Dates]</p>
+                <p><strong>Location:</strong> Indian Institute of Technology Madras, Chennai</p>
+                <p><strong>Fee:</strong> [Insert Fee Details]</p>
+                <a href="[Insert Registration Link]" class="register-btn">Register Now</a>
+            </div>
+        </section>
+
+        <!-- Contact Us -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <div class="contact">
+                <p>For more information or any queries, please reach out to us at:</p>
+                <ul>
+                    <li><strong>Email:</strong> <a href="mailto:ceo.arunava@mvariance.in">ceo.arunava@mvariance.in</a></li>
+                    <li><strong>Phone:</strong> [Insert Contact Number]</li>
+                    <li><strong>Website:</strong> <a href="[Insert Website URL]">[Insert Website URL]</a></li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Mvariance Edtech. All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>
