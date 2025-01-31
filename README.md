@@ -17,5 +17,5 @@ Mvariance EdTech Pvt Ltd is a startup dedicated to empowering students in privat
 
 - **Website:** [mvariance.in](https://mvariance.in)
 - **Email:** [info@mvariance.in](mailto:info@mvariance.in)
-- **Phone:** +91-XXXXXXXXXX
-- **Address:**
+- **Phone:** +91-7755839309
+- **Address:** 369A, Chandel gate, Nankari, Kanpur, UP 209016, India
